@@ -1,7 +1,6 @@
 # JavaScript Study Group
 
-JavaScript isn't going anywhere. It's good for 
-user interfaces. Keep it simple.
+Keep it simple.
 
 ## Objectives
 - Create go-to boilerplate code
@@ -18,8 +17,7 @@ user interfaces. Keep it simple.
 ## testing sparkline
 
 ## Future
-- Make ES6 Module with subset of [gauss.js](\
-https://github.com/fredrick/gauss)
+- Make ES6 Module with subset of [gauss.js](https://github.com/fredrick/gauss)
 
 ## References
 - [ECMA-262 version ES6, aka

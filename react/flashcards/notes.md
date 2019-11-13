@@ -20,3 +20,34 @@ what they mean o the hooks-intro page when they say:
 **Hooks allow you to reuse stateful logic without changing 
 your component hierarchy. This makes it easy to share Hooks
 among many components or with the community.**
+
+## Imports
+
+The history of of creating components in 
+JavaScript is valuable for both learning the language
+and reasoning about scope and composability of 
+components.
+
+- [JavaScript Modules: From IIFEs to CommonJS to ES6 Modules](https://tylermcginnis.com/javascript-modules-iifes-commonjs-esmodules/) by Tyler McGinnis. * 
+ There’s good reason for that. Modules in JavaScript have a strange and erratic history. In this post we’ll walk through that history and you’ll learn modules of the past to better understand how JavaScript modules work today. *.
+
+- [Learning JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript) by Addy Osmani. 
+*Design patterns also provide us a common vocabulary to describe 
+solutions. This can be significantly simpler than describing syntax 
+and semantics when we're attempting to convey a way of structuring 
+a solution in code form to others.  In this book we will explore 
+applying both classical and modern design patterns to the JavaScript 
+programming language.* 
+
+- [Crockford's Classless pattern](https://gist.github.com/mpj/17d8d73275bca303e8d2) Good breakdown of Douglas Crockford's version of the Revealing Module Pattern by [mpj](https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q). Notice
+no use of an IIFE in this example. This StackOverflow is good if 
+ES6 syntax is not clear: [Understanding Crockford's Classless OOP]
+](https://stackoverflow.com/questions/31615655/understanding-crockfords-classless-oop-implementation)
+
+- [The Revealing Module Pattern in Javascript](https://gist.github.com/zcaceres/bb0eec99c02dda6aac0e041d0d4d7bf2) Another summary of the Revealing Module
+Pattern by Zach Caceres. The point here is to return a object with 
+specific variables and functions exposed. Until ES6, JavaScript did 
+not have block scope, only function scope. So variables declared
+with var keyword were local to the function they were declared in.
+Variables declared without the <code>var</code> keyword are hoisted
+to global scope (bad). 

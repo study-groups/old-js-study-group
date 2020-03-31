@@ -1,0 +1,1964 @@
+execve("/usr/bin/yarn", ["yarn", "react-scripts", "start"], [/* 73 vars */]) = 0
+brk(NULL)                               = 0x558a06a54000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=249181, ...}) = 0
+mmap(NULL, 249181, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6cf1f68000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6cf1f67000
+mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6cf19b6000
+mprotect(0x7f6cf1b76000, 2097152, PROT_NONE) = 0
+mmap(0x7f6cf1d76000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f6cf1d76000
+mmap(0x7f6cf1d7c000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6cf1d7c000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6cf1f66000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6cf1f65000
+arch_prctl(ARCH_SET_FS, 0x7f6cf1f66700) = 0
+mprotect(0x7f6cf1d76000, 16384, PROT_READ) = 0
+mprotect(0x558a05a05000, 8192, PROT_READ) = 0
+mprotect(0x7f6cf1fa5000, 4096, PROT_READ) = 0
+munmap(0x7f6cf1f68000, 249181)          = 0
+getuid()                                = 1000
+getgid()                                = 1000
+getpid()                                = 30921
+rt_sigaction(SIGCHLD, {0x558a057f9540, ~[RTMIN RT_1], SA_RESTORER, 0x7f6cf19eb4b0}, NULL, 8) = 0
+geteuid()                               = 1000
+brk(NULL)                               = 0x558a06a54000
+brk(0x558a06a75000)                     = 0x558a06a75000
+getppid()                               = 30919
+stat("/home/mricos/src/study-groups/js-study-group/react/flashcards", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+open("/usr/bin/yarn", O_RDONLY)         = 3
+fcntl(3, F_DUPFD, 10)                   = 10
+close(3)                                = 0
+fcntl(10, F_SETFD, FD_CLOEXEC)          = 0
+geteuid()                               = 1000
+getegid()                               = 1000
+rt_sigaction(SIGINT, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGINT, {0x558a057f9540, ~[RTMIN RT_1], SA_RESTORER, 0x7f6cf19eb4b0}, NULL, 8) = 0
+rt_sigaction(SIGQUIT, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGQUIT, {SIG_DFL, ~[RTMIN RT_1], SA_RESTORER, 0x7f6cf19eb4b0}, NULL, 8) = 0
+rt_sigaction(SIGTERM, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTERM, {SIG_DFL, ~[RTMIN RT_1], SA_RESTORER, 0x7f6cf19eb4b0}, NULL, 8) = 0
+read(10, "#!/bin/sh\nargv0=$(echo \"$0\" | se"..., 8192) = 1025
+pipe([3, 4])                            = 0
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f6cf1f669d0) = 30922
+close(4)                                = 0
+read(3, "/usr/bin/yarn\n", 128)         = 14
+read(3, "", 128)                        = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=30922, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigreturn({mask=[]})                 = 0
+close(3)                                = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30922
+pipe([3, 4])                            = 0
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f6cf1f669d0) = 30926
+close(4)                                = 0
+read(3, "../share/yarn/bin\n", 128)     = 18
+read(3, "", 128)                        = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=30926, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigreturn({mask=[]})                 = 0
+close(3)                                = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30926
+pipe([3, 4])                            = 0
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f6cf1f669d0) = 30929
+close(4)                                = 0
+read(3, "Linux\n", 128)                 = 6
+read(3, "", 128)                        = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=30929, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigreturn({mask=[]})                 = 0
+close(3)                                = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30929
+pipe([3, 4])                            = 0
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f6cf1f669d0) = 30930
+close(4)                                = 0
+read(3, "/usr/share/yarn/bin\n", 128)   = 20
+read(3, "", 128)                        = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=30930, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+rt_sigreturn({mask=[]})                 = 0
+close(3)                                = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 30930
+open("/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+fcntl(1, F_DUPFD, 10)                   = 11
+close(1)                                = 0
+fcntl(11, F_SETFD, FD_CLOEXEC)          = 0
+dup2(3, 1)                              = 1
+close(3)                                = 0
+fcntl(2, F_DUPFD, 10)                   = 12
+close(2)                                = 0
+fcntl(12, F_SETFD, FD_CLOEXEC)          = 0
+dup2(1, 2)                              = 2
+stat("/home/mricos/bin/google-cloud-sdk/bin/node", 0x7fff72ba47a0) = -1 ENOENT (No such file or directory)
+stat("/home/mricos/.nvm/versions/node/v12.13.0/bin/node", {st_mode=S_IFREG|0755, st_size=45555616, ...}) = 0
+write(1, "/home/mricos/.nvm/versions/node/"..., 50) = 50
+dup2(11, 1)                             = 1
+close(11)                               = 0
+dup2(12, 2)                             = 2
+close(12)                               = 0
+open("/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+fcntl(1, F_DUPFD, 10)                   = 11
+close(1)                                = 0
+fcntl(11, F_SETFD, FD_CLOEXEC)          = 0
+dup2(3, 1)                              = 1
+close(3)                                = 0
+fcntl(2, F_DUPFD, 10)                   = 12
+close(2)                                = 0
+fcntl(12, F_SETFD, FD_CLOEXEC)          = 0
+dup2(1, 2)                              = 2
+stat("/home/mricos/bin/google-cloud-sdk/bin/winpty", 0x7fff72ba4720) = -1 ENOENT (No such file or directory)
+stat("/home/mricos/.nvm/versions/node/v12.13.0/bin/winpty", 0x7fff72ba4720) = -1 ENOENT (No such file or directory)
+stat("/usr/games/winpty", 0x7fff72ba4720) = -1 ENOENT (No such file or directory)
+stat("/home/mricos/.pyenv/bin/winpty", 0x7fff72ba4720) = -1 ENOENT (No such file or directory)
+stat("/home/mricos/bin/winpty", 0x7fff72ba4720) = -1 ENOENT (No such file or directory)
+stat("/usr/local/sbin/winpty", 0x7fff72ba4720) = -1 ENOENT (No such file or directory)
+stat("/usr/local/bin/winpty", 0x7fff72ba4720) = -1 ENOENT (No such file or directory)
+stat("/usr/sbin/winpty", 0x7fff72ba4720) = -1 ENOENT (No such file or directory)
+stat("/usr/bin/winpty", 0x7fff72ba4720) = -1 ENOENT (No such file or directory)
+stat("/sbin/winpty", 0x7fff72ba4720)    = -1 ENOENT (No such file or directory)
+stat("/bin/winpty", 0x7fff72ba4720)     = -1 ENOENT (No such file or directory)
+stat("/usr/games/winpty", 0x7fff72ba4720) = -1 ENOENT (No such file or directory)
+stat("/usr/local/games/winpty", 0x7fff72ba4720) = -1 ENOENT (No such file or directory)
+stat("/snap/bin/winpty", 0x7fff72ba4720) = -1 ENOENT (No such file or directory)
+dup2(11, 1)                             = 1
+close(11)                               = 0
+dup2(12, 2)                             = 2
+close(12)                               = 0
+execve("/home/mricos/bin/google-cloud-sdk/bin/node", ["node", "/usr/share/yarn/bin/yarn.js", "react-scripts", "start"], [/* 73 vars */]) = -1 ENOENT (No such file or directory)
+execve("/home/mricos/.nvm/versions/node/v12.13.0/bin/node", ["node", "/usr/share/yarn/bin/yarn.js", "react-scripts", "start"], [/* 73 vars */]) = 0
+brk(NULL)                               = 0x403b000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=249181, ...}) = 0
+mmap(NULL, 249181, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7ff3e8dae000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\r\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=14608, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff3e8dad000
+mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ff3e89c2000
+mprotect(0x7ff3e89c5000, 2093056, PROT_NONE) = 0
+mmap(0x7ff3e8bc4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7ff3e8bc4000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/x86_64-linux-gnu/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \235\10\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=1566440, ...}) = 0
+mmap(NULL, 3675136, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ff3e8640000
+mprotect(0x7ff3e87b2000, 2097152, PROT_NONE) = 0
+mmap(0x7ff3e89b2000, 49152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x172000) = 0x7ff3e89b2000
+mmap(0x7ff3e89be000, 13312, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ff3e89be000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0V\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=1088952, ...}) = 0
+mmap(NULL, 3178744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ff3e8337000
+mprotect(0x7ff3e843f000, 2093056, PROT_NONE) = 0
+mmap(0x7ff3e863e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x107000) = 0x7ff3e863e000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p*\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=89696, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff3e8dac000
+mmap(NULL, 2185488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ff3e8121000
+mprotect(0x7ff3e8137000, 2093056, PROT_NONE) = 0
+mmap(0x7ff3e8336000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x7ff3e8336000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ff3e7f04000
+mprotect(0x7ff3e7f1c000, 2093056, PROT_NONE) = 0
+mmap(0x7ff3e811b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7ff3e811b000
+mmap(0x7ff3e811d000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ff3e811d000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ff3e7b3a000
+mprotect(0x7ff3e7cfa000, 2097152, PROT_NONE) = 0
+mmap(0x7ff3e7efa000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7ff3e7efa000
+mmap(0x7ff3e7f00000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ff3e7f00000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff3e8dab000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff3e8daa000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff3e8da8000
+arch_prctl(ARCH_SET_FS, 0x7ff3e8da8740) = 0
+mprotect(0x7ff3e7efa000, 16384, PROT_READ) = 0
+mprotect(0x7ff3e811b000, 4096, PROT_READ) = 0
+mprotect(0x7ff3e863e000, 4096, PROT_READ) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff3e8da7000
+mprotect(0x7ff3e89b2000, 40960, PROT_READ) = 0
+mprotect(0x7ff3e8bc4000, 4096, PROT_READ) = 0
+mprotect(0x29d8000, 12288, PROT_READ)   = 0
+mprotect(0x7ff3e8deb000, 4096, PROT_READ) = 0
+munmap(0x7ff3e8dae000, 249181)          = 0
+set_tid_address(0x7ff3e8da8a10)         = 30921
+set_robust_list(0x7ff3e8da8a20, 24)     = 0
+rt_sigaction(SIGRTMIN, {0x7ff3e7f09b50, [], SA_RESTORER|SA_SIGINFO, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {0x7ff3e7f09be0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+brk(NULL)                               = 0x403b000
+brk(0x406d000)                          = 0x406d000
+futex(0x7ff3e89bf1ac, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7ff3e89bf1b8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x29f4888, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+rt_sigprocmask(SIG_SETMASK, [USR1], NULL, 8) = 0
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 8), ...}) = 0
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 8), ...}) = 0
+fstat(2, {st_mode=S_IFREG|0664, st_size=14619, ...}) = 0
+rt_sigaction(SIGHUP, {SIG_DFL, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGILL, {SIG_DFL, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGTRAP, {SIG_DFL, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGABRT, {SIG_DFL, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGBUS, {SIG_DFL, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGFPE, {SIG_DFL, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGUSR1, {SIG_DFL, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGSEGV, {SIG_DFL, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGUSR2, {SIG_DFL, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGPIPE, {SIG_IGN, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGTERM, {SIG_DFL, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGSTKFLT, {SIG_DFL, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGCONT, {SIG_DFL, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGTSTP, {SIG_DFL, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGTTIN, {SIG_DFL, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGTTOU, {SIG_DFL, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGURG, {SIG_DFL, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGXCPU, {SIG_DFL, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGXFSZ, {SIG_IGN, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGVTALRM, {SIG_DFL, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGPROF, {SIG_DFL, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGWINCH, {SIG_DFL, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGIO, {SIG_DFL, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGPWR, {SIG_DFL, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGSYS, {SIG_DFL, [], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+fcntl(0, F_GETFL)                       = 0x8002 (flags O_RDWR|O_LARGEFILE)
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+fcntl(1, F_GETFL)                       = 0x8002 (flags O_RDWR|O_LARGEFILE)
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+fcntl(2, F_GETFL)                       = 0x8001 (flags O_WRONLY|O_LARGEFILE)
+ioctl(2, TCGETS, 0x7ffc7a593f50)        = -1 ENOTTY (Inappropriate ioctl for device)
+rt_sigaction(SIGINT, {0x9a7040, ~[RTMIN RT_1], SA_RESTORER|SA_RESETHAND, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigaction(SIGTERM, {0x9a7040, ~[RTMIN RT_1], SA_RESTORER|SA_RESETHAND, 0x7ff3e7f15390}, NULL, 8) = 0
+getrlimit(RLIMIT_NOFILE, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+setrlimit(RLIMIT_NOFILE, {rlim_cur=1024*1024, rlim_max=1024*1024}) = 0
+ioctl(0, FIOCLEX)                       = 0
+ioctl(1, FIOCLEX)                       = 0
+ioctl(2, FIOCLEX)                       = 0
+ioctl(3, FIOCLEX)                       = -1 EBADF (Bad file descriptor)
+ioctl(4, FIOCLEX)                       = -1 EBADF (Bad file descriptor)
+ioctl(5, FIOCLEX)                       = -1 EBADF (Bad file descriptor)
+ioctl(6, FIOCLEX)                       = -1 EBADF (Bad file descriptor)
+ioctl(7, FIOCLEX)                       = -1 EBADF (Bad file descriptor)
+ioctl(8, FIOCLEX)                       = -1 EBADF (Bad file descriptor)
+ioctl(9, FIOCLEX)                       = -1 EBADF (Bad file descriptor)
+ioctl(10, FIOCLEX)                      = -1 EBADF (Bad file descriptor)
+ioctl(11, FIOCLEX)                      = -1 EBADF (Bad file descriptor)
+ioctl(12, FIOCLEX)                      = -1 EBADF (Bad file descriptor)
+ioctl(13, FIOCLEX)                      = -1 EBADF (Bad file descriptor)
+ioctl(14, FIOCLEX)                      = -1 EBADF (Bad file descriptor)
+ioctl(15, FIOCLEX)                      = -1 EBADF (Bad file descriptor)
+ioctl(16, FIOCLEX)                      = -1 EBADF (Bad file descriptor)
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+brk(0x408e000)                          = 0x408e000
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+clock_getres(CLOCK_MONOTONIC_COARSE, {0, 4000000}) = 0
+epoll_create1(EPOLL_CLOEXEC)            = 3
+pipe2([4, 5], O_CLOEXEC)                = 0
+write(5, "*", 1)                        = 1
+futex(0x29f4880, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+pipe2([6, 7], O_NONBLOCK|O_CLOEXEC)     = 0
+eventfd2(0, EFD_CLOEXEC|EFD_NONBLOCK)   = 8
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7ff3e7339000
+mprotect(0x7ff3e7339000, 4096, PROT_NONE) = 0
+clone(child_stack=0x7ff3e7b38fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7ff3e7b399d0, tls=0x7ff3e7b39700, child_tidptr=0x7ff3e7b399d0) = 30933
+futex(0x4071240, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, ffffffff) = 0
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7ff3e6b38000
+mprotect(0x7ff3e6b38000, 4096, PROT_NONE) = 0
+clone(child_stack=0x7ff3e7337fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7ff3e73389d0, tls=0x7ff3e7338700, child_tidptr=0x7ff3e73389d0) = 30934
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7ff3e6337000
+mprotect(0x7ff3e6337000, 4096, PROT_NONE) = 0
+clone(child_stack=0x7ff3e6b36fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7ff3e6b379d0, tls=0x7ff3e6b37700, child_tidptr=0x7ff3e6b379d0) = 30935
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7ff3e5b36000
+mprotect(0x7ff3e5b36000, 4096, PROT_NONE) = 0
+clone(child_stack=0x7ff3e6335fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7ff3e63369d0, tls=0x7ff3e6336700, child_tidptr=0x7ff3e63369d0) = 30936
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7ff3e5335000
+mprotect(0x7ff3e5335000, 4096, PROT_NONE) = 0
+clone(child_stack=0x7ff3e5b34fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7ff3e5b359d0, tls=0x7ff3e5b35700, child_tidptr=0x7ff3e5b359d0) = 30937
+futex(0x7ffc7a5940f0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7ffc7a594120, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7ffc7a594124, FUTEX_WAIT_PRIVATE, 1, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7ffc7a5940f0, FUTEX_WAKE_PRIVATE, 1) = 0
+epoll_create1(EPOLL_CLOEXEC)            = 13
+pipe2([14, 15], O_NONBLOCK|O_CLOEXEC)   = 0
+eventfd2(0, EFD_CLOEXEC|EFD_NONBLOCK)   = 16
+brk(0x40b0000)                          = 0x40b0000
+open("/sys/fs/cgroup/memory/memory.limit_in_bytes", O_RDONLY|O_CLOEXEC) = 17
+read(17, "9223372036854771712\n", 31)   = 20
+close(17)                               = 0
+open("/proc/meminfo", O_RDONLY|O_CLOEXEC) = 17
+read(17, "MemTotal:        8072564 kB\nMemF"..., 4095) = 1279
+close(17)                               = 0
+brk(0x40d9000)                          = 0x40d9000
+futex(0x29f7948, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x29f7808, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x29f77fc, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x29f77f4, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+getrandom("kB'\242\272\10MZ\360\4=\33,.gUYI\357\276\226h\251\vh,Z%\230\26\377\4", 32, 0) = 32
+futex(0x29f7918, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+mmap(0x28b1240d8000, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x28b1240d8000
+brk(0x40fa000)                          = 0x40fa000
+mmap(0x257bc08c0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x257bc08c0000
+munmap(0x257bc0900000, 258048)          = 0
+mprotect(0x257bc08c0000, 262144, PROT_READ|PROT_WRITE) = 0
+mprotect(0x257bc08c0000, 262144, PROT_READ) = 0
+mmap(0x2676d2000000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2676d2000000
+munmap(0x2676d2040000, 258048)          = 0
+mprotect(0x2676d2000000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x2413a0400000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2413a0400000
+munmap(0x2413a0440000, 258048)          = 0
+mprotect(0x2413a0400000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x2f67e29c0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2f67e29c0000
+munmap(0x2f67e2a00000, 258048)          = 0
+mprotect(0x2f67e29c0000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x27b52cf80000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x27b52cf80000
+munmap(0x27b52cfc0000, 258048)          = 0
+mprotect(0x27b52cf80000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x799df464000, 45056, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x799df464000
+munmap(0x799df46c000, 12288)            = 0
+mprotect(0x799df464000, 32768, PROT_READ|PROT_WRITE) = 0
+mmap(0x325783340000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x325783340000
+munmap(0x325783380000, 258048)          = 0
+mprotect(0x325783340000, 262144, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124100000, 262144, PROT_NONE) = 0
+madvise(0x28b124100000, 262144, MADV_DONTNEED) = 0
+mprotect(0x28b124100000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124101000, 4096, PROT_NONE) = 0
+madvise(0x28b124101000, 4096, MADV_DONTNEED) = 0
+mprotect(0x28b124102000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b12413f000, 4096, PROT_NONE) = 0
+madvise(0x28b12413f000, 4096, MADV_DONTNEED) = 0
+mmap(0x24a7ef900000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x24a7ef900000
+munmap(0x24a7ef940000, 258048)          = 0
+mprotect(0x24a7ef900000, 262144, PROT_READ|PROT_WRITE) = 0
+brk(0x411b000)                          = 0x411b000
+munmap(0x32578335b000, 151552)          = 0
+mprotect(0x28b124127000, 4096, PROT_NONE) = 0
+madvise(0x28b124127000, 4096, MADV_DONTNEED) = 0
+mprotect(0x28b124128000, 98304, PROT_NONE) = 0
+madvise(0x28b124128000, 98304, MADV_DONTNEED) = 0
+munmap(0x24a7ef901000, 258048)          = 0
+mprotect(0x28b124102000, 151552, PROT_READ|PROT_EXEC) = 0
+mmap(0x339b5eb40000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x339b5eb40000
+munmap(0x339b5eb80000, 258048)          = 0
+mprotect(0x339b5eb40000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x2aa040180000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2aa040180000
+munmap(0x2aa0401c0000, 258048)          = 0
+mprotect(0x2aa040180000, 262144, PROT_READ|PROT_WRITE) = 0
+readlink("/proc/self/exe", "/home/mricos/.nvm/versions/node/"..., 8191) = 49
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+futex(0x29ec760, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x29f4918, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [USR1], 8) = 0
+mmap(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7ff3e8de3000
+mprotect(0x7ff3e8de3000, 4096, PROT_NONE) = 0
+clone(child_stack=0x7ff3e8de9fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7ff3e8dea9d0, tls=0x7ff3e8dea700, child_tidptr=0x7ff3e8dea9d0) = 30938
+rt_sigprocmask(SIG_SETMASK, [USR1], NULL, 8) = 0
+rt_sigaction(SIGUSR1, {0xaa6f10, ~[RTMIN RT_1], SA_RESTORER, 0x7ff3e7f15390}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [USR1], NULL, 8) = 0
+brk(0x413c000)                          = 0x413c000
+brk(0x413a000)                          = 0x413a000
+brk(0x4160000)                          = 0x4160000
+brk(0x4156000)                          = 0x4156000
+brk(0x4152000)                          = 0x4152000
+mmap(0x3c88abdc0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x3c88abdc0000
+munmap(0x3c88abe00000, 258048)          = 0
+mprotect(0x3c88abdc0000, 262144, PROT_READ|PROT_WRITE) = 0
+brk(0x4173000)                          = 0x4173000
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x4070ed0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x4070ed0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x40bc5a0, FUTEX_WAKE_PRIVATE, 1) = 1
+mprotect(0x28b124140000, 262144, PROT_NONE) = 0
+madvise(0x28b124140000, 262144, MADV_DONTNEED) = 0
+mprotect(0x28b124140000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124141000, 4096, PROT_NONE) = 0
+madvise(0x28b124141000, 4096, MADV_DONTNEED) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b12417f000, 4096, PROT_NONE) = 0
+madvise(0x28b12417f000, 4096, MADV_DONTNEED) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x4070ed0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x40bc5a0, FUTEX_WAKE_PRIVATE, 1) = 1
+mmap(0x1d4d50940000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x1d4d50940000
+munmap(0x1d4d50980000, 258048)          = 0
+mprotect(0x1d4d50940000, 262144, PROT_READ|PROT_WRITE) = 0
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x4070ed0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x40bc5a0, FUTEX_WAKE_PRIVATE, 1) = 1
+brk(0x4195000)                          = 0x4195000
+brk(0x4187000)                          = 0x4187000
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x4070ed0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x40bc5a0, FUTEX_WAKE_PRIVATE, 1) = 1
+mmap(0x39cfbde00000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x39cfbde00000
+munmap(0x39cfbde40000, 258048)          = 0
+mprotect(0x39cfbde00000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x2b89ffdc0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2b89ffdc0000
+munmap(0x2b89ffe00000, 258048)          = 0
+mprotect(0x2b89ffdc0000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x3f564ae40000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x3f564ae40000
+munmap(0x3f564ae80000, 258048)          = 0
+mprotect(0x3f564ae40000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0xa0a07140000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0xa0a07140000
+munmap(0xa0a07180000, 258048)           = 0
+mprotect(0xa0a07140000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x20f7dfc00000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x20f7dfc00000
+munmap(0x20f7dfc40000, 258048)          = 0
+mprotect(0x20f7dfc00000, 262144, PROT_READ|PROT_WRITE) = 0
+brk(0x41a8000)                          = 0x41a8000
+brk(0x41a6000)                          = 0x41a6000
+brk(0x41a5000)                          = 0x41a5000
+brk(0x41a4000)                          = 0x41a4000
+brk(0x41a3000)                          = 0x41a3000
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x4070ed0, FUTEX_WAKE_PRIVATE, 1) = 1
+brk(0x419f000)                          = 0x419f000
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+syscall_332(0xffffff9c, 0x7ffc7a5933c8, 0, 0xfff, 0x7ffc7a592fa0, 0x7ffc7a5930c0) = -1 (errno 38)
+stat("/usr/share/yarn/bin/yarn.js", {st_mode=S_IFREG|0755, st_size=1015, ...}) = 0
+lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/usr/share", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+lstat("/usr/share/yarn", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/usr/share/yarn/bin", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/usr/share/yarn/bin/yarn.js", {st_mode=S_IFREG|0755, st_size=1015, ...}) = 0
+open("/usr/share/yarn/bin/yarn.js", O_RDONLY|O_CLOEXEC) = 17
+fstat(17, {st_mode=S_IFREG|0755, st_size=1015, ...}) = 0
+read(17, "#!/usr/bin/env node\n\n/* eslint-d"..., 1015) = 1015
+close(17)                               = 0
+stat("/usr/share/yarn/lib/v8-compile-cache.js", {st_mode=S_IFREG|0644, st_size=9910, ...}) = 0
+lstat("/usr/share/yarn/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/usr/share/yarn/lib/v8-compile-cache.js", {st_mode=S_IFREG|0644, st_size=9910, ...}) = 0
+open("/usr/share/yarn/lib/v8-compile-cache.js", O_RDONLY|O_CLOEXEC) = 17
+fstat(17, {st_mode=S_IFREG|0644, st_size=9910, ...}) = 0
+read(17, "'use strict';\n\nconst Module = re"..., 9910) = 9910
+close(17)                               = 0
+futex(0x29f7650, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x29f77ec, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x29f78d8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x29f77e0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x29f77d8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x29f4c5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x29f76c4, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x29f765c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x29f77ac, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x29f77a4, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+open("/etc/ssl/openssl.cnf", O_RDONLY)  = 17
+fstat(17, {st_mode=S_IFREG|0644, st_size=10835, ...}) = 0
+read(17, "#\n# OpenSSL example configuratio"..., 4096) = 4096
+read(17, "Netscape crash on BMPStrings or "..., 4096) = 4096
+brk(0x41c0000)                          = 0x41c0000
+read(17, " this to avoid interpreting an e"..., 4096) = 2643
+read(17, "", 4096)                      = 0
+close(17)                               = 0
+futex(0x29f77d0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+sysinfo({uptime=141172, loads=[105856, 75616, 73312], totalram=8266305536, freeram=473489408, sharedram=1469673472, bufferram=51699712, totalswap=8487170048, freeswap=366735360, procs=2168, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+brk(0x41bc000)                          = 0x41bc000
+futex(0x29f4b04, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x29f4afc, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x29ed6e0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+mmap(0x2837ae7c0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2837ae7c0000
+munmap(0x2837ae800000, 258048)          = 0
+mprotect(0x2837ae7c0000, 262144, PROT_READ|PROT_WRITE) = 0
+write(16, "\1\0\0\0\0\0\0\0", 8)        = 8
+brk(0x41dd000)                          = 0x41dd000
+brk(0x41d9000)                          = 0x41d9000
+brk(0x41d7000)                          = 0x41d7000
+mmap(0x21bcbc6c0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x21bcbc6c0000
+munmap(0x21bcbc700000, 258048)          = 0
+mprotect(0x21bcbc6c0000, 262144, PROT_READ|PROT_WRITE) = 0
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+getuid()                                = 1000
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+open("/tmp/v8-compile-cache-1000/7.7.299.13-node.12/zSusrzSsharezSyarnzSbinzSyarn.js.BLOB", O_RDONLY|O_CLOEXEC) = 17
+fstat(17, {st_mode=S_IFREG|0664, st_size=2224088, ...}) = 0
+mmap(NULL, 2224128, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff3e5116000
+read(17, "\255\3\336\300\217\35d\177\206AH\0E\35|7\f\3\0\0\210\343!\0\346\370o\352W:\347\34"..., 2224088) = 2224088
+close(17)                               = 0
+open("/tmp/v8-compile-cache-1000/7.7.299.13-node.12/zSusrzSsharezSyarnzSbinzSyarn.js.MAP", O_RDONLY|O_CLOEXEC) = 17
+fstat(17, {st_mode=S_IFREG|0664, st_size=85, ...}) = 0
+read(17, "{\"/usr/share/yarn/lib/cli.js\":[\""..., 85) = 85
+close(17)                               = 0
+stat("/usr/share/yarn/lib/cli", 0x7ffc7a592cf0) = -1 ENOENT (No such file or directory)
+stat("/usr/share/yarn/lib/cli.js", {st_mode=S_IFREG|0755, st_size=4877443, ...}) = 0
+lstat("/usr/share/yarn/lib/cli.js", {st_mode=S_IFREG|0755, st_size=4877443, ...}) = 0
+open("/usr/share/yarn/lib/cli.js", O_RDONLY|O_CLOEXEC) = 17
+fstat(17, {st_mode=S_IFREG|0755, st_size=4877443, ...}) = 0
+mmap(NULL, 4878336, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff3e4c6f000
+read(17, "#!/usr/bin/env node\nmodule.expor"..., 4877443) = 4877443
+close(17)                               = 0
+mmap(0x1ff7839c0000, 9732096, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x1ff7839c0000
+munmap(0x1ff7842c9000, 258048)          = 0
+mprotect(0x1ff7839c0000, 9474048, PROT_READ|PROT_WRITE) = 0
+mmap(NULL, 14209024, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff3cf273000
+munmap(0x7ff3cf273000, 14209024)        = 0
+mmap(0x36c41f3c0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x36c41f3c0000
+munmap(0x36c41f400000, 258048)          = 0
+mprotect(0x36c41f3c0000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x119e0bb40000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x119e0bb40000
+munmap(0x119e0bb80000, 258048)          = 0
+mprotect(0x119e0bb40000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x29a88dec0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x29a88dec0000
+munmap(0x29a88df00000, 258048)          = 0
+mprotect(0x29a88dec0000, 262144, PROT_READ|PROT_WRITE) = 0
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+mmap(0x3efe62340000, 9732096, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x3efe62340000
+munmap(0x3efe62c49000, 258048)          = 0
+mprotect(0x3efe62340000, 9474048, PROT_READ|PROT_WRITE) = 0
+mmap(0x88aadcc0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x88aadcc0000
+munmap(0x88aadd00000, 258048)           = 0
+mprotect(0x88aadcc0000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x1a455ba40000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x1a455ba40000
+munmap(0x1a455ba80000, 258048)          = 0
+mprotect(0x1a455ba40000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x19901580000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x19901580000
+munmap(0x199015c0000, 258048)           = 0
+mprotect(0x19901580000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x1a2f0c280000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x1a2f0c280000
+munmap(0x1a2f0c2c0000, 258048)          = 0
+mprotect(0x1a2f0c280000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x171293ac0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x171293ac0000
+munmap(0x171293b00000, 258048)          = 0
+mprotect(0x171293ac0000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x345b1540000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x345b1540000
+munmap(0x345b1580000, 258048)           = 0
+mprotect(0x345b1540000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x4f32d600000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x4f32d600000
+munmap(0x4f32d640000, 258048)           = 0
+mprotect(0x4f32d600000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x13283de00000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x13283de00000
+munmap(0x13283de40000, 258048)          = 0
+mprotect(0x13283de00000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x346181340000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x346181340000
+munmap(0x346181380000, 258048)          = 0
+mprotect(0x346181340000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x2261a31c0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2261a31c0000
+munmap(0x2261a3200000, 258048)          = 0
+mprotect(0x2261a31c0000, 262144, PROT_READ|PROT_WRITE) = 0
+brk(0x41f8000)                          = 0x41f8000
+mmap(0x3fde3b00000, 397312, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x3fde3b00000
+munmap(0x3fde3b22000, 258048)           = 0
+mprotect(0x3fde3b00000, 139264, PROT_READ|PROT_WRITE) = 0
+brk(0x4230000)                          = 0x4230000
+brk(0x4270000)                          = 0x4270000
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x4070ed0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+mmap(0x3fcc26c00000, 786432, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x3fcc26c00000
+munmap(0x3fcc26c81000, 258048)          = 0
+mprotect(0x3fcc26c00000, 528384, PROT_READ|PROT_WRITE) = 0
+brk(0x4292000)                          = 0x4292000
+getcwd("/home/mricos/src/study-groups/js-study-group/react/flashcards", 4096) = 62
+getuid()                                = 1000
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+open("/.yarnrc", O_RDONLY|O_CLOEXEC)    = -1 ENOENT (No such file or directory)
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x4070ed0, FUTEX_WAKE_PRIVATE, 1) = 1
+open("/home/.yarnrc", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/mricos/.yarnrc", O_RDONLY|O_CLOEXEC) = 17
+fstat(17, {st_mode=S_IFREG|0664, st_size=116, ...}) = 0
+read(17, "# THIS IS AN AUTOGENERATED FILE."..., 116) = 116
+close(17)                               = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+open("/home/mricos/src/.yarnrc", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/mricos/src/study-groups/.yarnrc", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/mricos/src/study-groups/js-study-group/.yarnrc", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/mricos/src/study-groups/js-study-group/react/.yarnrc", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/mricos/src/study-groups/js-study-group/react/flashcards/.yarnrc", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/etc/yarn/config", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/etc/yarnrc", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/mricos/.config/yarn", O_RDONLY|O_CLOEXEC) = 17
+fstat(17, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+read(17, 0x41c8780, 8192)               = -1 EISDIR (Is a directory)
+close(17)                               = 0
+open("/home/mricos/.config/yarn/config", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/mricos/.config/yarn", O_RDONLY|O_CLOEXEC) = 17
+fstat(17, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+read(17, 0x41ca790, 8192)               = -1 EISDIR (Is a directory)
+close(17)                               = 0
+open("/home/mricos/.yarn/config", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/mricos/.yarnrc", O_RDONLY|O_CLOEXEC) = 17
+fstat(17, {st_mode=S_IFREG|0664, st_size=116, ...}) = 0
+read(17, "# THIS IS AN AUTOGENERATED FILE."..., 116) = 116
+close(17)                               = 0
+mmap(0x12e042500000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x12e042500000
+munmap(0x12e042540000, 258048)          = 0
+mprotect(0x12e042500000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x2d09bf80000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2d09bf80000
+munmap(0x2d09bfc0000, 258048)           = 0
+mprotect(0x2d09bf80000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x2e32d9300000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2e32d9300000
+munmap(0x2e32d9340000, 258048)          = 0
+mprotect(0x2e32d9300000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x2570cb3c0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2570cb3c0000
+munmap(0x2570cb400000, 258048)          = 0
+mprotect(0x2570cb3c0000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x396b7d100000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x396b7d100000
+munmap(0x396b7d140000, 258048)          = 0
+mprotect(0x396b7d100000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x2f41adb00000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2f41adb00000
+munmap(0x2f41adb40000, 258048)          = 0
+mprotect(0x2f41adb00000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x2f18277c0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2f18277c0000
+munmap(0x2f1827800000, 258048)          = 0
+mprotect(0x2f18277c0000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x2f616b400000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2f616b400000
+munmap(0x2f616b440000, 258048)          = 0
+mprotect(0x2f616b400000, 262144, PROT_READ|PROT_WRITE) = 0
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+mmap(0x148a15240000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x148a15240000
+munmap(0x148a15280000, 258048)          = 0
+mprotect(0x148a15240000, 262144, PROT_READ|PROT_WRITE) = 0
+futex(0x7ff3d4000020, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x7ffc7a590c80, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x7ffc7a590c54, FUTEX_CMP_REQUEUE_PRIVATE, 1, 2147483647, 0x7ffc7a590c80, 2) = 1
+futex(0x40e52b0, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 0, NULL, ffffffff) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+read(4, "*", 1)                         = 1
+rt_sigaction(SIGABRT, {0x12ddf60, ~[RTMIN RT_1], SA_RESTORER|SA_RESTART, 0x7ff3e7f15390}, NULL, 8) = 0
+write(5, "*", 1)                        = 1
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+read(4, "*", 1)                         = 1
+rt_sigaction(SIGALRM, {0x12ddf60, ~[RTMIN RT_1], SA_RESTORER|SA_RESTART, 0x7ff3e7f15390}, NULL, 8) = 0
+write(5, "*", 1)                        = 1
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+read(4, "*", 1)                         = 1
+rt_sigaction(SIGHUP, {0x12ddf60, ~[RTMIN RT_1], SA_RESTORER|SA_RESTART, 0x7ff3e7f15390}, NULL, 8) = 0
+write(5, "*", 1)                        = 1
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+read(4, "*", 1)                         = 1
+rt_sigaction(SIGINT, {0x12ddf60, ~[RTMIN RT_1], SA_RESTORER|SA_RESTART, 0x7ff3e7f15390}, NULL, 8) = 0
+write(5, "*", 1)                        = 1
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+read(4, "*", 1)                         = 1
+rt_sigaction(SIGTERM, {0x12ddf60, ~[RTMIN RT_1], SA_RESTORER|SA_RESTART, 0x7ff3e7f15390}, NULL, 8) = 0
+write(5, "*", 1)                        = 1
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+read(4, "*", 1)                         = 1
+rt_sigaction(SIGVTALRM, {0x12ddf60, ~[RTMIN RT_1], SA_RESTORER|SA_RESTART, 0x7ff3e7f15390}, NULL, 8) = 0
+write(5, "*", 1)                        = 1
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+read(4, "*", 1)                         = 1
+rt_sigaction(SIGXCPU, {0x12ddf60, ~[RTMIN RT_1], SA_RESTORER|SA_RESTART, 0x7ff3e7f15390}, NULL, 8) = 0
+write(5, "*", 1)                        = 1
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+read(4, "*", 1)                         = 1
+rt_sigaction(SIGXFSZ, {0x12ddf60, ~[RTMIN RT_1], SA_RESTORER|SA_RESTART, 0x7ff3e7f15390}, NULL, 8) = 0
+write(5, "*", 1)                        = 1
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+read(4, "*", 1)                         = 1
+rt_sigaction(SIGUSR2, {0x12ddf60, ~[RTMIN RT_1], SA_RESTORER|SA_RESTART, 0x7ff3e7f15390}, NULL, 8) = 0
+write(5, "*", 1)                        = 1
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+read(4, "*", 1)                         = 1
+rt_sigaction(SIGTRAP, {0x12ddf60, ~[RTMIN RT_1], SA_RESTORER|SA_RESTART, 0x7ff3e7f15390}, NULL, 8) = 0
+write(5, "*", 1)                        = 1
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+read(4, "*", 1)                         = 1
+rt_sigaction(SIGSYS, {0x12ddf60, ~[RTMIN RT_1], SA_RESTORER|SA_RESTART, 0x7ff3e7f15390}, NULL, 8) = 0
+write(5, "*", 1)                        = 1
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+read(4, "*", 1)                         = 1
+rt_sigaction(SIGQUIT, {0x12ddf60, ~[RTMIN RT_1], SA_RESTORER|SA_RESTART, 0x7ff3e7f15390}, NULL, 8) = 0
+write(5, "*", 1)                        = 1
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+read(4, "*", 1)                         = 1
+write(5, "*", 1)                        = 1
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+read(4, "*", 1)                         = 1
+rt_sigaction(SIGIO, {0x12ddf60, ~[RTMIN RT_1], SA_RESTORER|SA_RESTART, 0x7ff3e7f15390}, NULL, 8) = 0
+write(5, "*", 1)                        = 1
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+read(4, "*", 1)                         = 1
+write(5, "*", 1)                        = 1
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+read(4, "*", 1)                         = 1
+rt_sigaction(SIGPWR, {0x12ddf60, ~[RTMIN RT_1], SA_RESTORER|SA_RESTART, 0x7ff3e7f15390}, NULL, 8) = 0
+write(5, "*", 1)                        = 1
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+read(4, "*", 1)                         = 1
+rt_sigaction(SIGSTKFLT, {0x12ddf60, ~[RTMIN RT_1], SA_RESTORER|SA_RESTART, 0x7ff3e7f15390}, NULL, 8) = 0
+write(5, "*", 1)                        = 1
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+read(4, "*", 1)                         = 1
+write(5, "*", 1)                        = 1
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+getcwd("/home/mricos/src/study-groups/js-study-group/react/flashcards", 4096) = 62
+mmap(0x1979bbf00000, 524288, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x1979bbf00000
+munmap(0x1979bbf41000, 258048)          = 0
+mprotect(0x1979bbf00000, 266240, PROT_READ|PROT_WRITE) = 0
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+fcntl(1, F_GETFL)                       = 0x8002 (flags O_RDWR|O_LARGEFILE)
+ioctl(1, TIOCGPTN, 0x7ffc7a591c30)      = -1 ENOTTY (Inappropriate ioctl for device)
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 8), ...}) = 0
+readlink("/proc/self/fd/1", "/dev/pts/8", 255) = 10
+stat("/dev/pts/8", {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 8), ...}) = 0
+open("/dev/pts/8", O_RDWR|O_CLOEXEC)    = 17
+dup3(17, 1, O_CLOEXEC)                  = 1
+open("/dev/null", O_RDONLY|O_CLOEXEC)   = 18
+ioctl(17, FIONBIO, [1])                 = 0
+ioctl(17, FIONBIO, [0])                 = 0
+ioctl(17, TIOCGWINSZ, {ws_row=33, ws_col=119, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+read(4, "*", 1)                         = 1
+rt_sigaction(SIGWINCH, {0x12ddf60, ~[RTMIN RT_1], SA_RESTORER|SA_RESTART, 0x7ff3e7f15390}, NULL, 8) = 0
+write(5, "*", 1)                        = 1
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+ioctl(2, TCGETS, 0x7ffc7a591e20)        = -1 ENOTTY (Inappropriate ioctl for device)
+fstat(2, {st_mode=S_IFREG|0664, st_size=56369, ...}) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x4070ed0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x40bc5a0, FUTEX_WAKE_PRIVATE, 1) = 1
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x4070ed0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x40bc5a0, FUTEX_WAKE_PRIVATE, 1) = 1
+mmap(0x11feea1c0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x11feea1c0000
+munmap(0x11feea200000, 258048)          = 0
+mprotect(0x11feea1c0000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x29c007200000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x29c007200000
+munmap(0x29c007240000, 258048)          = 0
+mprotect(0x29c007200000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x28efa9340000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x28efa9340000
+munmap(0x28efa9380000, 258048)          = 0
+mprotect(0x28efa9340000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0xc51309c0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0xc51309c0000
+munmap(0xc5130a00000, 258048)           = 0
+mprotect(0xc51309c0000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x1de7efc0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x1de7efc0000
+munmap(0x1de7f000000, 258048)           = 0
+mprotect(0x1de7efc0000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x1ba414700000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x1ba414700000
+munmap(0x1ba414740000, 258048)          = 0
+mprotect(0x1ba414700000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x1827c3d80000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x1827c3d80000
+munmap(0x1827c3dc0000, 258048)          = 0
+mprotect(0x1827c3d80000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x28b6502c0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x28b6502c0000
+munmap(0x28b650300000, 258048)          = 0
+mprotect(0x28b6502c0000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x174f634c0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x174f634c0000
+munmap(0x174f63500000, 258048)          = 0
+mprotect(0x174f634c0000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x358310900000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x358310900000
+munmap(0x358310940000, 258048)          = 0
+mprotect(0x358310900000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x2154fa300000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2154fa300000
+munmap(0x2154fa340000, 258048)          = 0
+mprotect(0x2154fa300000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x1d14c6580000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x1d14c6580000
+munmap(0x1d14c65c0000, 258048)          = 0
+mprotect(0x1d14c6580000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x287e94180000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x287e94180000
+munmap(0x287e941c0000, 258048)          = 0
+mprotect(0x287e94180000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x341b83d40000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x341b83d40000
+munmap(0x341b83d80000, 258048)          = 0
+mprotect(0x341b83d40000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x36c4cb6c0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x36c4cb6c0000
+munmap(0x36c4cb700000, 258048)          = 0
+mprotect(0x36c4cb6c0000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x2764aa240000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x2764aa240000
+munmap(0x2764aa280000, 258048)          = 0
+mprotect(0x2764aa240000, 262144, PROT_READ|PROT_WRITE) = 0
+mmap(0x317e38c0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x317e38c0000
+munmap(0x317e3900000, 258048)           = 0
+mprotect(0x317e38c0000, 262144, PROT_READ|PROT_WRITE) = 0
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x4070ed0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x4070ed0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7ffc7a590980, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x7ffc7a590980, FUTEX_WAIT_PRIVATE, 2, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7ffc7a590980, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x7ffc7a590954, FUTEX_CMP_REQUEUE_PRIVATE, 1, 2147483647, 0x7ffc7a590980, 6) = 2
+futex(0x7ffc7a590980, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x7ffc7a590954, FUTEX_WAIT_BITSET_PRIVATE, 9, {111463, 416692000}, ffffffff) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x7ffc7a590980, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x4070ed0, FUTEX_WAKE_PRIVATE, 1) = 1
+getcwd("/home/mricos/src/study-groups/js-study-group/react/flashcards", 4096) = 62
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x4070ed0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x40bc5a0, FUTEX_WAKE_PRIVATE, 1) = 1
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mmap(0x3f0bb5340000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x3f0bb5340000
+munmap(0x3f0bb5380000, 258048)          = 0
+mprotect(0x3f0bb5340000, 262144, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+open("/.yarnrc", O_RDONLY|O_CLOEXEC)    = -1 ENOENT (No such file or directory)
+open("/home/.yarnrc", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/mricos/.yarnrc", O_RDONLY|O_CLOEXEC) = 19
+fstat(19, {st_mode=S_IFREG|0664, st_size=116, ...}) = 0
+read(19, "# THIS IS AN AUTOGENERATED FILE."..., 116) = 116
+close(19)                               = 0
+open("/home/mricos/src/.yarnrc", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/mricos/src/study-groups/.yarnrc", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/mricos/src/study-groups/js-study-group/.yarnrc", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/mricos/src/study-groups/js-study-group/react/.yarnrc", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/mricos/src/study-groups/js-study-group/react/flashcards/.yarnrc", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/etc/yarn/config", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/etc/yarnrc", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/mricos/.config/yarn", O_RDONLY|O_CLOEXEC) = 19
+fstat(19, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+read(19, 0x4205e00, 8192)               = -1 EISDIR (Is a directory)
+close(19)                               = 0
+open("/home/mricos/.config/yarn/config", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/mricos/.config/yarn", O_RDONLY|O_CLOEXEC) = 19
+fstat(19, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+read(19, 0x4207e10, 8192)               = -1 EISDIR (Is a directory)
+close(19)                               = 0
+open("/home/mricos/.yarn/config", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/mricos/.yarnrc", O_RDONLY|O_CLOEXEC) = 19
+fstat(19, {st_mode=S_IFREG|0664, st_size=116, ...}) = 0
+read(19, "# THIS IS AN AUTOGENERATED FILE."..., 116) = 116
+close(19)                               = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x4070ed0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x40bc5a0, FUTEX_WAKE_PRIVATE, 1) = 1
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+fcntl(0, F_GETFL)                       = 0x8002 (flags O_RDWR|O_LARGEFILE)
+ioctl(0, TIOCGPTN, 0x7ffc7a591fc0)      = -1 ENOTTY (Inappropriate ioctl for device)
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 8), ...}) = 0
+readlink("/proc/self/fd/0", "/dev/pts/8", 255) = 10
+stat("/dev/pts/8", {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 8), ...}) = 0
+open("/dev/pts/8", O_RDWR|O_CLOEXEC)    = 19
+dup3(19, 0, O_CLOEXEC)                  = 0
+ioctl(19, FIONBIO, [1])                 = 0
+open("/proc/self/stat", O_RDONLY)       = 20
+read(20, "30921 (node) R 30919 30919 27964"..., 1023) = 330
+close(20)                               = 0
+open("/etc/resolv.conf", O_RDONLY)      = 20
+fstat(20, {st_mode=S_IFREG|0644, st_size=183, ...}) = 0
+read(20, "# Dynamic resolv.conf(5) file fo"..., 4096) = 183
+read(20, "", 4096)                      = 0
+close(20)                               = 0
+open("/etc/nsswitch.conf", O_RDONLY)    = 20
+fstat(20, {st_mode=S_IFREG|0644, st_size=507, ...}) = 0
+read(20, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 507
+read(20, "", 4096)                      = 0
+close(20)                               = 0
+open("/dev/urandom", O_RDONLY)          = 20
+fstat(20, {st_mode=S_IFCHR|0666, st_rdev=makedev(1, 9), ...}) = 0
+ioctl(20, TCGETS, 0x7ffc7a591750)       = -1 EINVAL (Invalid argument)
+read(20, "\263\251K\212\372FH\35\276\314\320\346%:\256\265\216\5\10\0\341\205\232\233Id\26GX$\203\256"..., 4096) = 4096
+close(20)                               = 0
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x4070ed0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x40bc5a0, FUTEX_WAKE_PRIVATE, 1) = 1
+socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 20
+bind(20, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+getsockname(20, {sa_family=AF_NETLINK, pid=30921, groups=00000000}, [12]) = 0
+sendto(20, "\24\0\0\0\22\0\1\3fX\376]\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+recvmsg(20, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\234\4\0\0\20\0\2\0fX\376]\311x\0\0\0\0\4\3\1\0\0\0I\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 2360
+recvmsg(20, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0fX\376]\311x\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+sendto(20, "\24\0\0\0\26\0\1\3gX\376]\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+recvmsg(20, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0gX\376]\311x\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 164
+recvmsg(20, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0gX\376]\311x\0\0\n@\1\0\2\0\0\0\24\0\1\0&\5\340\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 216
+recvmsg(20, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0gX\376]\311x\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+close(20)                               = 0
+write(17, "\33[2K", 4)                  = 4
+write(17, "\33[1G", 4)                  = 4
+write(17, "\33[1myarn run v1.12.3\33[22m\n", 26) = 26
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mmap(0x21b75b040000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x21b75b040000
+munmap(0x21b75b080000, 258048)          = 0
+mprotect(0x21b75b040000, 262144, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 20
+bind(20, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+getsockname(20, {sa_family=AF_NETLINK, pid=30921, groups=00000000}, [12]) = 0
+sendto(20, "\24\0\0\0\22\0\1\3fX\376]\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+recvmsg(20, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\234\4\0\0\20\0\2\0fX\376]\311x\0\0\0\0\4\3\1\0\0\0I\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 2360
+recvmsg(20, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0fX\376]\311x\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+sendto(20, "\24\0\0\0\26\0\1\3gX\376]\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+recvmsg(20, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0gX\376]\311x\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 164
+recvmsg(20, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0gX\376]\311x\0\0\n@\1\0\2\0\0\0\24\0\1\0&\5\340\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 216
+recvmsg(20, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0gX\376]\311x\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+close(20)                               = 0
+access("/home/mricos/src/study-groups/js-study-group/react/flashcards/package.json", F_OK) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+ioctl(2, TCGETS, 0x7ffc7a591470)        = -1 ENOTTY (Inappropriate ioctl for device)
+fstat(2, {st_mode=S_IFREG|0664, st_size=77167, ...}) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7ff3e4915000
+mprotect(0x7ff3e4915000, 4096, PROT_NONE) = 0
+clone(child_stack=0x7ff3e5114fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7ff3e51159d0, tls=0x7ff3e5115700, child_tidptr=0x7ff3e51159d0) = 30939
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7ff3e4114000
+mprotect(0x7ff3e4114000, 4096, PROT_NONE) = 0
+clone(child_stack=0x7ff3e4913fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7ff3e49149d0, tls=0x7ff3e4914700, child_tidptr=0x7ff3e49149d0) = 30940
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7ff3cf7ff000
+mprotect(0x7ff3cf7ff000, 4096, PROT_NONE) = 0
+clone(child_stack=0x7ff3cfffefb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7ff3cffff9d0, tls=0x7ff3cffff700, child_tidptr=0x7ff3cffff9d0) = 30941
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7ff3ceffe000
+mprotect(0x7ff3ceffe000, 4096, PROT_NONE) = 0
+clone(child_stack=0x7ff3cf7fdfb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7ff3cf7fe9d0, tls=0x7ff3cf7fe700, child_tidptr=0x7ff3cf7fe9d0) = 30942
+futex(0x29f44d0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_ctl(13, EPOLL_CTL_ADD, 14, {EPOLLIN, {u32=14, u64=14}}) = 0
+epoll_ctl(13, EPOLL_CTL_ADD, 16, {EPOLLIN, {u32=16, u64=16}}) = 0
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 979, NULL, 8) = 1
+read(16, "\2\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 977, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 977, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 976, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 976, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 976, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x4070ed0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x40bc5a0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 974, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 973, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 972, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 972, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 972, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 971, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+brk(0x42d6000)                          = 0x42d6000
+mprotect(0x28b124180000, 262144, PROT_NONE) = 0
+madvise(0x28b124180000, 262144, MADV_DONTNEED) = 0
+mprotect(0x28b124180000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124181000, 4096, PROT_NONE) = 0
+madvise(0x28b124181000, 4096, MADV_DONTNEED) = 0
+mprotect(0x28b124182000, 159744, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b1241a9000, 4096, PROT_NONE) = 0
+madvise(0x28b1241a9000, 4096, MADV_DONTNEED) = 0
+mprotect(0x28b124182000, 159744, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124182000, 159744, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b1241c0000, 262144, PROT_NONE) = 0
+madvise(0x28b1241c0000, 262144, MADV_DONTNEED) = 0
+mprotect(0x28b1241c0000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b1241c1000, 4096, PROT_NONE) = 0
+madvise(0x28b1241c1000, 4096, MADV_DONTNEED) = 0
+mprotect(0x28b1241c2000, 139264, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b1241e4000, 4096, PROT_NONE) = 0
+madvise(0x28b1241e4000, 4096, MADV_DONTNEED) = 0
+mprotect(0x28b1241c2000, 139264, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b1241c2000, 139264, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124200000, 262144, PROT_NONE) = 0
+madvise(0x28b124200000, 262144, MADV_DONTNEED) = 0
+mprotect(0x28b124200000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124201000, 4096, PROT_NONE) = 0
+madvise(0x28b124201000, 4096, MADV_DONTNEED) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b12423f000, 4096, PROT_NONE) = 0
+madvise(0x28b12423f000, 4096, MADV_DONTNEED) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124142000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 954, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 953, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 953, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 949, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 949, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 946, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 946, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 945, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 945, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 945, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 945, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 944, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 943, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 943, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 943, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 939, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 939, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 939, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 939, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 939, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 938, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 938, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 938, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 938, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 938, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 937, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 937, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 937, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 937, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 937, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 937, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 936, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 936, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 932, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 931, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 931, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 931, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 931, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 930, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 930, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 930, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 930, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 929, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 929, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 929, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 929, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 929, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 929, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 929, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 928, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 928, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+umask(0)                                = 02
+umask(02)                               = 0
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 926, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 926, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 926, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 925, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 925, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 925, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 925, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 924, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 924, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 924, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 923, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 923, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 923, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 922, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 922, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+mmap(0x375187cc0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x375187cc0000
+munmap(0x375187d00000, 258048)          = 0
+mprotect(0x375187cc0000, 262144, PROT_READ|PROT_WRITE) = 0
+umask(0)                                = 02
+umask(02)                               = 0
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 919, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 918, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+umask(0)                                = 02
+umask(02)                               = 0
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 918, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 918, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 916, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 916, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 916, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 916, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 915, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 914, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 913, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 913, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 913, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 913, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 913, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 913, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x4070ed0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x40bc5a0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x4070ed0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x40bc5a0, FUTEX_WAKE_PRIVATE, 1) = 1
+mmap(0x15b8b0300000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x15b8b0300000
+munmap(0x15b8b0340000, 258048)          = 0
+mprotect(0x15b8b0300000, 262144, PROT_READ|PROT_WRITE) = 0
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x4070ed0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x4070ed0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x7ffc7a58d434, FUTEX_WAIT_BITSET_PRIVATE, 2, {111463, 546263000}, ffffffff) = 0
+futex(0x7ffc7a58d460, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x4070ed0, FUTEX_WAKE_PRIVATE, 1) = 1
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x4070ed0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x40bc5a0, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x4070ed0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x40bc5a0, FUTEX_WAKE_PRIVATE, 1) = 1
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 886, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 885, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 885, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124240000, 262144, PROT_NONE) = 0
+madvise(0x28b124240000, 262144, MADV_DONTNEED) = 0
+mprotect(0x28b124240000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124241000, 4096, PROT_NONE) = 0
+madvise(0x28b124241000, 4096, MADV_DONTNEED) = 0
+mprotect(0x28b124242000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124243000, 4096, PROT_NONE) = 0
+madvise(0x28b124243000, 4096, MADV_DONTNEED) = 0
+mprotect(0x28b124242000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124242000, 4096, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124280000, 262144, PROT_NONE) = 0
+madvise(0x28b124280000, 262144, MADV_DONTNEED) = 0
+mprotect(0x28b124280000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124281000, 4096, PROT_NONE) = 0
+madvise(0x28b124281000, 4096, MADV_DONTNEED) = 0
+mprotect(0x28b124282000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124283000, 4096, PROT_NONE) = 0
+madvise(0x28b124283000, 4096, MADV_DONTNEED) = 0
+mprotect(0x28b124282000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124282000, 4096, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b1242c0000, 262144, PROT_NONE) = 0
+madvise(0x28b1242c0000, 262144, MADV_DONTNEED) = 0
+mprotect(0x28b1242c0000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b1242c1000, 4096, PROT_NONE) = 0
+madvise(0x28b1242c1000, 4096, MADV_DONTNEED) = 0
+mprotect(0x28b1242c2000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b1242c3000, 4096, PROT_NONE) = 0
+madvise(0x28b1242c3000, 4096, MADV_DONTNEED) = 0
+mprotect(0x28b1242c2000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b1242c2000, 4096, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x4070ed0, FUTEX_WAKE_PRIVATE, 1) = 1
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+futex(0x7ff3e7efeb20, FUTEX_WAKE_PRIVATE, 1) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+mmap(0x1c65af0c0000, 520192, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x1c65af0c0000
+munmap(0x1c65af100000, 258048)          = 0
+mprotect(0x1c65af0c0000, 262144, PROT_READ|PROT_WRITE) = 0
+write(17, "\33[2K", 4)                  = 4
+write(17, "\33[1G", 4)                  = 4
+write(17, "\33[2m$ /home/mricos/src/study-gro"..., 111) = 111
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 875, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 875, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 874, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 874, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 874, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 874, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 874, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 874, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 873, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 873, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 873, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 873, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+umask(0)                                = 02
+umask(02)                               = 0
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 871, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 871, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 870, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+umask(0)                                = 02
+umask(02)                               = 0
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 870, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 870, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 870, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 869, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+geteuid()                               = 1000
+getgid()                                = 1000
+getegid()                               = 1000
+futex(0x4070efc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x4070ef8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x4070ed0, FUTEX_WAKE_PRIVATE, 1) = 1
+futex(0x40bc5a0, FUTEX_WAKE_PRIVATE, 1) = 1
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_WRITE) = 0
+mprotect(0x28b124202000, 249856, PROT_READ|PROT_EXEC) = 0
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 866, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+umask(0)                                = 02
+umask(02)                               = 0
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 865, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+umask(0)                                = 02
+umask(02)                               = 0
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 863, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 863, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 863, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 862, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 862, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 862, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+umask(0)                                = 02
+umask(02)                               = 0
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 861, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 861, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 861, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 861, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 861, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+futex(0x29f44a4, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x29f44a0, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+futex(0x29f4460, FUTEX_WAKE_PRIVATE, 1) = 1
+epoll_pwait(13, [{EPOLLIN, {u32=16, u64=16}}], 1024, 861, NULL, 8) = 1
+read(16, "\1\0\0\0\0\0\0\0", 1024)      = 8
+pipe2([20, 21], O_CLOEXEC)              = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+read(4, "*", 1)                         = 1
+rt_sigaction(SIGCHLD, {0x12ddf60, ~[RTMIN RT_1], SA_RESTORER|SA_RESTART, 0x7ff3e7f15390}, NULL, 8) = 0
+write(5, "*", 1)                        = 1
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff3e8da8a10) = 30943
+close(21)                               = 0
+read(20, "", 4)                         = 0
+close(20)                               = 0
+epoll_pwait(13, [], 1024, 855, NULL, 8) = 0
+open("/proc/self/stat", O_RDONLY)       = 20
+read(20, "30921 (node) R 30919 30919 27964"..., 1023) = 331
+close(20)                               = 0
+epoll_pwait(13, [], 1024, 1000, NULL, 8) = 0
+open("/proc/self/stat", O_RDONLY)       = 20
+read(20, "30921 (node) R 30919 30919 27964"..., 1023) = 331
+close(20)                               = 0
+epoll_pwait(13, [], 1024, 1000, NULL, 8) = 0
+open("/proc/self/stat", O_RDONLY)       = 20
+read(20, "30921 (node) R 30919 30919 27964"..., 1023) = 331
+close(20)                               = 0
+epoll_pwait(13, [], 1024, 1000, NULL, 8) = 0
+open("/proc/self/stat", O_RDONLY)       = 20
+read(20, "30921 (node) R 30919 30919 27964"..., 1023) = 331
+close(20)                               = 0
+epoll_pwait(13, [], 1024, 1000, NULL, 8) = 0
+open("/proc/self/stat", O_RDONLY)       = 20
+read(20, "30921 (node) R 30919 30919 27964"..., 1023) = 331
+close(20)                               = 0
+epoll_pwait(13, [], 1024, 1000, NULL, 8) = 0
+open("/proc/self/stat", O_RDONLY)       = 20
+read(20, "30921 (node) R 30919 30919 27964"..., 1023) = 331
+close(20)                               = 0
+epoll_pwait(13, [], 1024, 1000, NULL, 8) = 0
+open("/proc/self/stat", O_RDONLY)       = 20
+read(20, "30921 (node) R 30919 30919 27964"..., 1023) = 331
+close(20)                               = 0
+epoll_pwait(13, strace: Process 30921 detached
+ <detached ...>
